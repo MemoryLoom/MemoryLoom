@@ -13,6 +13,7 @@ const root = fileURLToPath(new URL('.', import.meta.url)).replace(/\/$/, '')
 export default defineConfig(({ command }) => {
   const dev = command === 'serve'
   return {
+  base: process.env.VITE_BASE_PATH || '/',
   // In dev, JSX routes through a shim that stamps each DOM element with its
   // source location; production uses React's own runtime, so no tag ships.
   plugins: [

@@ -2,8 +2,8 @@
    reads at header size: the monogram on its own where the mark is small, and
    the wordmark on its own beside it. The name is never re-set as type. */
 
-const MONOGRAM = { src: '/images/memoryloom-monogram.webp', w: 602, h: 281 }
-const WORDMARK = { src: '/images/memoryloom-wordmark.webp', w: 992, h: 251 }
+const MONOGRAM = { src: `${import.meta.env.BASE_URL}images/memoryloom-monogram.webp`, w: 602, h: 281 }
+const WORDMARK = { src: `${import.meta.env.BASE_URL}images/memoryloom-wordmark.webp`, w: 992, h: 251 }
 /* The name sets itself: the crop carries its own capitals and descender space,
    so it is sized in rem against the monogram rather than following the pill's
    font size, which Tailwind leaves at the browser default. */

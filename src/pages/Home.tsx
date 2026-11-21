@@ -16,7 +16,7 @@ const SHOWCASE = [
     name: 'Aarohi & Ved',
     kind: 'Wedding invitation site + memory film',
     line: 'A three-day Goa wedding, with a guest list of 180 who RSVPed through the site.',
-    still: '/images/showcase-goa.webp',
+    still: `${import.meta.env.BASE_URL}images/showcase-goa.webp`,
     alt: 'A couple walking a palm-lined path at golden hour, seen from behind',
     tall: true,
   },
@@ -24,7 +24,7 @@ const SHOWCASE = [
     name: "Rhea's thirtieth",
     kind: 'Birthday memory film',
     line: 'Nine photographed years, gathered from friends and cut into four minutes.',
-    still: '/images/showcase-birthday.webp',
+    still: `${import.meta.env.BASE_URL}images/showcase-birthday.webp`,
     alt: 'A long table of friends under warm string lights, seen from above',
     tall: false,
   },
@@ -32,7 +32,7 @@ const SHOWCASE = [
     name: 'Ammu & Appa',
     kind: 'Anniversary tribute film',
     line: 'Forty years told through recordings of their children, made for a Sunday lunch.',
-    still: '/images/showcase-anniversary.webp',
+    still: `${import.meta.env.BASE_URL}images/showcase-anniversary.webp`,
     alt: 'Two older hands resting together over a family photograph album',
     tall: false,
   },
@@ -167,7 +167,7 @@ export default function Home() {
               </ul>
               <div className="mt-auto pt-8">
                 <FilmMock
-                  still="/images/showcase-goa.webp"
+                  still={`${import.meta.env.BASE_URL}images/showcase-goa.webp`}
                   alt="A still from a memory film: a couple on a palm-lined path at golden hour"
                   title="Aarohi & Ved"
                   runtime="01:28"

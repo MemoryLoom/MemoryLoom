@@ -15,7 +15,7 @@ export function FilmFrame({ className }: { className?: string }) {
         <div className="animate-[loom-float_9s_ease-in-out_infinite]">
           <div className="relative overflow-hidden rounded-lg shadow-raised">
             <img
-              src="/images/memory-film-still.webp"
+              src={`${import.meta.env.BASE_URL}images/memory-film-still.webp`}
               alt="A still from a memory film: a couple walking a palm-lined path at golden hour"
               width={720}
               height={960}
@@ -43,7 +43,7 @@ export function FilmFrame({ className }: { className?: string }) {
       <DialogContent className="max-w-3xl overflow-hidden border-border bg-primary p-0 text-primary-foreground">
         <div className="relative aspect-[4/3] sm:aspect-video">
           <img
-            src="/images/memory-film-still.webp"
+            src={`${import.meta.env.BASE_URL}images/memory-film-still.webp`}
             alt=""
             width={720}
             height={960}
