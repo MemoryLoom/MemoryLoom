@@ -1,0 +1,84 @@
+/* The token contract, and the whole of this site's art direction: :root holds
+   the values, @theme inline turns them into utilities. One colour scheme,
+   deliberately — MemoryLoom is warm ivory and espresso, always light. */
+:root {
+  /* Warm ivory ground, sand for raised surfaces, espresso for ink and for the
+     one dark band, cocoa for body text, bronze for the accent and hairline. */
+  --background: oklch(0.953 0.016 76);
+  --foreground: oklch(0.33 0.055 51);
+  --card: oklch(0.916 0.025 74);
+  --card-foreground: oklch(0.33 0.055 51);
+  --popover: oklch(0.968 0.012 78);
+  --popover-foreground: oklch(0.33 0.055 51);
+  --primary: oklch(0.33 0.055 51);
+  --primary-foreground: oklch(0.962 0.014 76);
+  --secondary: oklch(0.916 0.025 74);
+  --secondary-foreground: oklch(0.33 0.055 51);
+  --muted: oklch(0.916 0.025 74);
+  --muted-foreground: oklch(0.40 0.043 55);
+  --accent: oklch(0.72 0.068 64);
+  --accent-foreground: oklch(0.29 0.05 50);
+  --destructive: oklch(0.5 0.16 27);
+  --border: oklch(0.33 0.055 51 / 0.16);
+  --input: oklch(0.33 0.055 51 / 0.2);
+  --ring: oklch(0.42 0.07 58);
+
+  --font-heading: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-label: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --radius: 1rem;
+  --radius-panel: min(var(--radius), 1.5rem);
+  --shadow: 0 1px 2px oklch(0.33 0.055 51 / 0.05), 0 18px 48px oklch(0.33 0.055 51 / 0.09);
+
+  --hero-size: clamp(2.75rem, 6.2vw, 5.25rem);
+  --heading-tracking: -0.015em;
+  --heading-line: 1.02;
+  --heading-weight: 400;
+  --body-size: 1rem;
+  --body-line: 1.7;
+
+  --content-width: 1180px;
+  --gutter: clamp(1.25rem, 5vw, 3.5rem);
+  --section-space: clamp(4.5rem, 9vw, 8rem);
+  --layout-gap: 2rem;
+  --motion-fast: 220ms;
+  --motion-slow: 520ms;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-label: var(--font-label);
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+
+  --radius-sm: max(0px, calc(var(--radius-panel) - 10px));
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-panel);
+  --radius-xl: calc(var(--radius-panel) + 4px);
+
+  --shadow-raised: var(--shadow);
+  --spacing-gutter: var(--gutter);
+  --spacing-section: var(--section-space);
+  --spacing-layout: var(--layout-gap);
+  --container-content: var(--content-width);
+}
